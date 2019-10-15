@@ -24,7 +24,23 @@ texto2.txt..
 */
 
 //letra a
-file_exists("texto.txt");
+$nomeArquivo = "texto.txt";
+$arquivoAberto = fopen($nomeArquivo, "w");
+if (file_exists($nomeArquivo)){
+    fopen($arquivoAberto, "a");
+}else{
+    fopen("texto.txt", "w");
+}
+//letra b
+    /* while( >= 50){
+        echo "Olá Mundo! testando";
+    }*/
+//letra c
+ fopen($nomeArquivo, "r");
+ //letra d
+ 
+
+
 
 
 

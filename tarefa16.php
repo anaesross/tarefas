@@ -30,8 +30,6 @@ function maior($a, $b, $c){
 function tabela($inicial, $limite){
     $inicial = 100;
     $limite = 200;
-
-
 }
 //letra c
     $numeroMagico = 10;

@@ -42,7 +42,7 @@
     maior que 50.
     Caso seja verdadeiro, retornar “O número é maior que 50” e, caso seja falso: “O
     número é menor que 50”. */
-
+    echo"Lição QUATRO<BR>";
     $maior = mt_rand(1,100);
     if($maior > 50){
         echo "O número é maior que 50";

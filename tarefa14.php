@@ -1,7 +1,5 @@
 <?php
 
-//6-c , 7, 8, 9 - incompleto
-
 /* 1. Utilizando um for, imprimir os números de 1 a 100. */
 
 for($i=1; $i<101; $i++){
@@ -27,6 +25,7 @@ número aleatório que pode ser 0 ou 1) até tirar 5 vezes cara (representado
 pelo número 1).
 O quando loop terminar, você precisará imprimir o número de lançamentos
 que teve que acontecer até tirar 5 vezes cara. */
+echo "EXERCICIO QUATRO <br>";
 $tentativa = 1;
 $quantidade = 0;
 do{
@@ -72,20 +71,20 @@ foreach($array as $nome){
 echo "<hr>";
 //letra c
 $i = 0;
-while($i > count($array) ){
+while($i < count($array) ){
     $resultado = $array[$i];
     echo $resultado."<br>";
     $i++;
 }
 echo "<hr>";
 //letra d
-
-/* do{
-    $resultadoArray = $array[$i];
+$i = 0;
+do{
+    echo $array[$i]."<br>";
     $i++;
-    echo $resultadoArray[$i];
-}while($i > count($array); */
+}while($i < count($array));
 
+echo "<hr>";
 /* 7. Definir um array com 10 números aleatórios entre 0 e 10. Percorrer esse array
 para imprimir todos os números. A execução deve terminar se algum dos
 números encontrados for 5 (a mensagem impressa deve ser “Encontramos um
@@ -94,18 +93,48 @@ a. Resolver este problema com um for.
 b. Resolver este problema com um while.
 c. Resolver este problema com um do/while. */
 
-$numeros = [0 ,1 ,2 ,3 ,4 ,5, 6, 7, 8, 9];
 //letra a
-
-/*     for($i = 0 ; $i < count($numeros); $i++){
-        echo "Encontramos o número 5";
+echo "LETRA A<br>";
+$numeros = [];
+for($i = 0 ; $i < 10; $i++){
+    $numeros[] = mt_rand(0 ,10);
+}
+for($i=0; $i < count($numeros); $i++){
+    if($numeros[$i] == 5){
+        echo "Encontramos o número 5<br>";
+        break;
+    } else{
+        echo "Não encontramos o número<br>";
     }
- */
+}   
+echo "<hr>";
 //letra b
+echo"Letra B <br>";
+$i=0;
+while($i < 10){
+    if($numeros[$i] == 5){
+        echo "Encontramos o número 5 <br>";
+        break;
+    } else{
+        echo "Não encontramos o número <br>";
+    }
+    $i++;
+}
 
-
+echo "<hr>";
 //letra c
+$i = 0;
+do{ 
+    if($numeros[$i] == 5){
+        echo "Encontramos o número 5 <br>";
+        break;
+    } else{
+        echo "Não encontramos o número <br>";
+    }
+    $i++;
+}while($i < count($numeros));
 
+echo "<hr>";
 
 /* 8. Utilizando a função “Range”(http://php.net/manual/en/function.range.php),
 criar um intervalo de letras (de a até n), imprimir uma frase que diga “Na
@@ -113,8 +142,8 @@ posição [index], está o valor [value]”.
 Onde [value] será substituído por cada valor do array e [index] representa o
 índice. */
 
-foreach( range('a' , 'n') as $letter){
-    echo "Na posição , está o valor $letter";
+foreach( range('a' , 'n') as $letter => $posicao){
+    echo "Na posição $letter, está o valor $posicao <br>";
 }
 
 echo "<hr>";
@@ -133,12 +162,13 @@ nome: Sonic */
 
 $mascotes = ["animal"=>"cachorro", "idade"=> 3, "altura"=> 0.60, "nome"=>"Sonic"];
 
-foreach($mascotes as $mascote){
-    echo $mascote."<br>";
+foreach($mascotes as $mascote => $valor){
+    echo "$mascote : $valor <br>";
     
 }
 echo "<hr>";
-/* 11. A partir de um arquivo com a seguinte variável definida:
+/* 
+11. A partir de um arquivo com a seguinte variável definida:
 $ceu = ["Itália"=>"Roma", "Luxemburgo"=>"Luxemburgo",
 "Bélgica"=> "Bruxelas", "Dinamarca"=>"Copenhagen",
 "Finlândia"=>"Helsinki", "França" => "Paris",
@@ -156,8 +186,27 @@ Opcional: Organizar a lista por nome de país.
 Exemplo de output:
 A capital da Holanda é Amsterdã.
 A capital da Grécia é Atenas.
-A capital da Alemanha é Berlim. */
+A capital da Alemanha é Berlim. 
+*/
 
+$ceu = ["Itália"=>"Roma", "Luxemburgo"=>"Luxemburgo",
+"Bélgica"=> "Bruxelas", "Dinamarca"=>"Copenhagen",
+"Finlândia"=>"Helsinki", "França" => "Paris",
+"Eslováquia"=>"Bratislava", "Eslovênia"=>"Liubliana",
+"Alemanha" => "Berlim", "Grécia" => "Atenas",
+"Irlanda"=>"Dublin", "Holanda"=>"Amsterdã",
+"Portugal"=>"Lisboa", "Espanha"=>"Madri",
+"Suécia"=>"Estocolmo", "Reino Unido"=>"Londres",
+"Chipre"=>"Nicósia", "Lituânia"=>"Vilnius", "República
+Tcheca"=>"Praga", "Estônia"=>"Tallinn",
+"Hungria"=>"Budapeste","Letônia"=>"Riga", "Malta"=>"Valletta",
+"Áustria" => "Viena", "Polônia"=>"Varsóvia"];
+
+foreach($ceu as $paises => $capital){
+    echo " A capital da $capital é $paises<br>";
+}
+echo "<br>";
+echo "<hr>";
 /* 12. A partir de um arquivo com a seguinte variável definida:
 $ceu = [
 "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
@@ -178,6 +227,27 @@ As cidades do Brasil são:
 ● Rio de Janeiro
 ● São Paulo */
 
+$ceu = [
+    "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé"],
+    "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo"],
+    "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla"],
+    "França" => ["Paris", "Nantes", "Lyon"],
+    "Itália" => ["Roma", "Milão", "Veneza"],
+    "Alemanha" => ["Munique", "Berlim", "Frankfurt"]
+    ];
+
+foreach($ceu as $paises => $posicao){
+    echo "As cidades da $paises são:<br>";
+?>
+
+    <?php 
+    foreach ($posicao as $cidades){
+    echo "<ul>
+            <li>$cidades</li><br>
+        </ul>";    
+    }
+}
+echo "<hr>";
 
 /* 13. A partir do exercício anterior:
 ● Adicionar a cada país um dado extra, além das cidades, chamado
@@ -189,4 +259,27 @@ IMPORTANTE: Para que isso funcione bem, os alunos devem criar um array
 associativo para cada país, de forma que cada país tenha os dados de suas
 cidades e naAmerica (se estão ou não). */
 
+$ceu = [
+    "Argentina" => ["Buenos Aires", "Córdoba", "Santa Fé","na América"],
+    "Brasil" => ["Brasília", "Rio de Janeiro", "São Paulo", "na América"],
+    "Colômbia" => ["Cartagena", "Bogotá", "Barranquilla", "na América"],
+    "França" => ["Paris", "Nantes", "Lyon"],
+    "Itália" => ["Roma", "Milão", "Veneza"],
+    "Alemanha" => ["Munique", "Berlim", "Frankfurt"]
+    ];
+        foreach($ceu as $paises => $cidades){
+            if(array_search('na América', $cidades) > 0 ){ //percorre todo o array e procura o valor citado
+                echo "As cidades da $paises são:<br>";           
+                foreach($cidades as $cidade ){
+                    if($cidade != "na América"){
+                        echo "  <ul>
+                                     <li>$cidade</li><br>
+                                </ul>";    
+                    }
+                }
+            } else {
+                    echo $paises.", não pertence a América<br>";
+            }
+
+        }
 ?>
