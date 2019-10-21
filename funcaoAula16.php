@@ -1,20 +1,23 @@
 <?php
 //Exemplo de função com parâmetro
     function tabuada($numero){
+        global $funcoesExecutadas;
+        $funcoesExecutadas++;
         for($i = 0 ; $i<=10; $i++){
             $total = $numero * $i;
             echo $numero."X".$i." = ".$total."<br>";
         }
     }
 
-    tabuada(2);
+    //tabuada(2);
 
     echo "<hr>";
 //Exemplo de função sem parâmetro
     function logado(){
+        
         echo "Seja Bem Vindo";
     }
-    logado();
+    //logado();
 
     echo "<hr>";
 
@@ -22,7 +25,7 @@
     function filmes($assistidos, $naoassistidos){
         $total = $assistidos + $naoassistidos;
     }
-    filmes(4, 55);
+    //filmes(4, 55);
 
     echo "<hr>";
 // exemplo return - nao retorna o resultado na tela apenas armazena (return e echo são diferentes)
@@ -46,9 +49,9 @@
         $a = $a + 1; //altera no codigo inteiro
         echo $a."<br>";
     }
-    soma();
-    soma();
-    soma();
-    soma();
-    echo soma();
+    //soma();
+    //soma();
+    //soma();
+    //soma();
+    //echo soma();
 ?>

@@ -19,12 +19,15 @@ $a = ['a'=>1, 'b'=> 2, 'c'=> 'Eu <3 JSON'];
 $a = json_encode($a);
 //letra c
 echo $a;
+echo '<br>';
 //letra d
 $b = json_decode($a, true);
+echo '<br>';
 //letra e
 echo $b;
+echo '<br>';
 //letra f
-echo $b['c']; echo $b['a']; echo $b [ 'b'];
+echo $b['c'] . ' | ' . $b['a'] . ' | ' . $b [ 'b'] . ' |';
 
 
 

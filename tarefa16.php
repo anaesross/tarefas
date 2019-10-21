@@ -19,18 +19,28 @@ parâmetro, a função use numeroMagico como limite.*/
 //letra a
 function maior($a, $b, $c){
     if($a>$b && $a>$c){
-        echo "O valor maior é: $a";
+        echo "O valor maior é: $a<br>";
     }elseif($b>$a && $b>$c){
-        echo "O maior valor é: $b";
+        echo "O maior valor é: $b<br>";
     }else{
-        echo "O maior valor é: $c";
+        echo "O maior valor é: $c<br>";
     }
 }
 //letra b
 function tabela($inicial, $limite){
-    $inicial = 100;
-    $limite = 200;
+    
+    $array = [];
+    for ($i = $inicial; $i < $limite; $i++) {
+        $array[] = $i;        
+        
+    }
+    return $array;
 }
+/* $ret = tabela(4,50);  - retornar via uma variável
+var_dump($ret);
+for($i = 0; $i < count($ret); $i++) { - retornar com números sem ser em array
+    echo $ret[$i] . '<br>';
+} */
 //letra c
     $numeroMagico = 10;
 
@@ -45,7 +55,23 @@ function tabela($inicial, $limite){
     }
 //letra e
 
-/*2. Criar um arquivo chamado superficie.php:
+function tabela2($inicial, $limite = null){
+    global $numeroMagico;
+
+    if( !isset($limite) ) $limite = $numeroMagico;
+
+    $array = [];
+    for ($i = $inicial; $i < $limite; $i++) {
+        $array[] = $i;        
+        
+    }
+    return $array;
+}
+
+$ret = tabela2(3, 10);
+var_dump($ret); 
+
+/*2. Criar um arquivo chamado superficie.php: - perguntar se é para calcular a área....
 a. Definir uma função triangulo() que retorne sua superfície.
 b. Definir uma função retangulo() que retorne sua superfície.
 c. Definir uma função quadrado() que retorne sua superfície.*/
@@ -81,6 +107,7 @@ echo "Ele triplica o conteúdo de boletos.php, pois estamos chamando o mesmo 3x"
 
 //letra e
 echo "Ele não triplica mais o conteúdo, pois o include_once permite que seja incluido apenas uma vez";
+
 
 /*4. Criar uma arquivo chamado tudoJunto.php. O conteúdo da primeira linha
 deve ser $funcoesExecutadas = 0. Abaixo disso, deve ser incluído nele o
