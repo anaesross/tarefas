@@ -18,10 +18,10 @@
 
     /* OOOOOUUU muda apenas a syntaxe, faz a mesma coisa e tem o mesmo nível de segurança  */
 
-    $query = $db->prepare('INSERT INTO alunos (nome, ra, curso_id)
-    VALUES(:nome, :ra, :curso_id) ');
+    $query = $db->prepare('INSERT INTO alunos (nome, ra, curso_id) 
+    VALUES(:nome, :ra, :curso_id) ');/*forma de parametros var parm, passando por paramentros o execute...*/
     
-    $resultado = $query->execute([
+    $resultado = $query->execute([/*... tem que seguir a sintaxe de array associativo */
         "nome"=> $nomeAluno,
         "ra"=> $raAluno,
         "curso_id"=>$cursoId
