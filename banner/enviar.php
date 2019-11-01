@@ -27,9 +27,8 @@
         "nome"=> $nomeAluno,
         "ra"=> $raAluno,
         "curso_id"=>$cursoId
-    ]);
-    
+    ]);   
 
-    echo "<pre>";
-    var_dump($resultado);
-
+    echo "<script>alert('Aluno cadastro com sucesso!')
+            location = 'index.php';
+        </script>";

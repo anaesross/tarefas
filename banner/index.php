@@ -1,4 +1,5 @@
 <?php include_once("includes/connection.php");
+$db = conectarBanco();
     $query = $db->query('SELECT * FROM cursos');
     $cursos = $query-> fetchAll(PDO::FETCH_ASSOC);
 
