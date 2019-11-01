@@ -6,7 +6,9 @@
     $raAluno = $_POST['ra'];
     $cursoId = $_POST['curso'];
 
-    /*faz ele preparar a query apenas, nao pega os valores ainda, questão de segurança*/
+    $db = conectarBanco();
+
+    /*faz ele preparar a query apenas, nao pega os valores ainda, questão de segurança
     $query = $db->prepare('INSERT INTO alunos (nome, ra, curso_id) 
     VALUES(
         ?,
@@ -14,7 +16,7 @@
         ?
     )');
 
-    $resultado = $query->execute([$nomeAluno, $raAluno, $cursoId]);
+    $resultado = $query->execute([$nomeAluno, $raAluno, $cursoId]);*/
 
     /* OOOOOUUU muda apenas a syntaxe, faz a mesma coisa e tem o mesmo nível de segurança  */
 
