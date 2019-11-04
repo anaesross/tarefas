@@ -1,5 +1,7 @@
 <?php
-/* 1.Criar dois arquivos: mostrar.php e modificar.php
+
+/*PHP Estruturado - Session
+1. Criar dois arquivos: mostrar.php e modificar.php
 a. arquivo mostrar.php só deve imprimir $_SESSION[“contador”] (se existir).
 Neste arquivo, é necessário imprimir o valor do contador.
 b. arquivo modificar.php deve ter 2 botões:
@@ -7,7 +9,6 @@ b. arquivo modificar.php deve ter 2 botões:
 colocar $_SESSION[“contador”] em 0 (zero).
 → O segundo será “Aumentar”, e deve aumentar o valor em 1.
 Testar as modificações.*/
-
 
 /*2. Utilizando os formulários de registro e login criados anteriormente,
 register.php e login.php, adicionar as seguintes funcionalidades:
@@ -25,10 +26,13 @@ cadastro;
 redirecionar para página de perfil do usuário (com suas informações
 exibidas na tela) e que permita edição deles;*/
 
-
-/*3. Adicionar um botão de “encerrar sessão” que seja exibido apenas se
+/*
+3. Adicionar um botão de “encerrar sessão” que seja exibido apenas se
 houver uma sessão aberta. Quando esse botão for clicado, todos os
 dados salvos em $_SESSION devem ser excluídos. Ao mesmo tempo,
 o cookie de lembrar do usuário deve ser eliminado. Quando a sessão
-é encerrada, o usuário deve ser redirecionado à página de início. */
+é encerrada, o usuário deve ser redirecionado à página de início.
+
+
+
 ?>
