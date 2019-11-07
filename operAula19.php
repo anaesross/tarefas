@@ -20,7 +20,7 @@ function doRegister($data)
 {
     
     //$data
-    $file = 'registros.json';
+    $file = 'registrosAula19.json';
     $registros = json_decode(file_get_contents($file), true);
         
     foreach ($registros as $key => $r) {
