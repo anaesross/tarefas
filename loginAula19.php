@@ -21,7 +21,7 @@ function doLogin($auth)
             $_SESSION['email'], 
             $_SESSION['senha']
         ];
-        header('location:autenticadoAula19.php')
+        header('location:autenticadoAula19.php');
     }
 }
 ?>
