@@ -11,7 +11,18 @@ hora e retorne o seu salário se baseando nos 2 parâmetros.
 3. As classes devem ter ao menos 1 método e 1 atributo que a diferencie das
 outras classes */
 
-class Funcionarios{
 
+/* 3 cargos????*/
+class Funcionario extends Cargos{
+    public $id;
+    protected $salario;
+
+
+
+    public function calcularSalario(){
+
+    }
 }
+
+
 ?>

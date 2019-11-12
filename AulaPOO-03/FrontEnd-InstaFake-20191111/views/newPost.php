@@ -1,3 +1,15 @@
+<!-- 
+1. Cadastro de usuário;
+2. Login de usuário;
+3. As postagens precisam apresentar o nome do usuário que
+a criou;
+4. Likes (adicionar botão para isso e também mostrar a
+quantidade de likes que aquela publicação teve);
+5. Arquivo com o DER deste projeto (diagrama com a
+estrutura lógica do seu banco de dados - relações entre
+tabelas, atributos...). -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
