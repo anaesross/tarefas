@@ -32,7 +32,7 @@ houver uma sessão aberta. Quando esse botão for clicado, todos os
 dados salvos em $_SESSION devem ser excluídos. Ao mesmo tempo,
 o cookie de lembrar do usuário deve ser eliminado. Quando a sessão
 é encerrada, o usuário deve ser redirecionado à página de início.
-
+*/
 
 
 ?>
