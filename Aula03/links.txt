@@ -1,0 +1,6 @@
+https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML // boas praticas de acessilidade em html
+
+https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML // SEO
+
+https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML // float CSS
+

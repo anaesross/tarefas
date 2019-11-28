@@ -1,0 +1,22 @@
+header{
+    background-color: lightgray;
+    height: 10vh;
+}
+#banner{
+    height: 90vh;
+}
+.nav-link{
+    color: navy;
+}
+#banner .container .row{
+    height: 90vh;
+}
+#about{
+    background-color: gray;
+    color: white;
+    box-shadow: 10px 3px 10px 3px black;
+    height: 100vh;
+}
+#about .container .row{
+    height: 100vh;
+}

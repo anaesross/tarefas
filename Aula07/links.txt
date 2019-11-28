@@ -1,0 +1,6 @@
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp // media queries
+
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp // CSS Media Queries - Examples
+
+https://www1.folha.uol.com.br/tec/2018/07/celular-e-mais-utilizado-do-que-computador-para-acessar-internet-no-brasil.shtml
+// reportagem sobre a quantidade de uso dos celulares em sites

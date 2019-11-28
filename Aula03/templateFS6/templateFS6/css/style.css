@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+
+p{
+
+}
+
+#item-principal{
+    color: darkred!important;
+}
+
+.em-linha {
+    display: inline-block;
+    width: 120px;
+    color:blue!important;
+}
+
+#caixa-texto {
+    height: 200px;
+    background: gray;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+#sobre {
+    background-image: url('../img/background.jpg');
+    color:#fff;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px;
+}

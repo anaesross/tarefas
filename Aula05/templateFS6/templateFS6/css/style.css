@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#item-principal{
+    color: darkred!important;
+}
+
+.em-linha {
+    display: inline-block;
+    width: 120px;
+    color:blue!important;
+}
+
+#caixa-texto {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+#sobre {
+    background-image: url('../img/background.jpg');
+    color:#fff;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 90px;
+}
+
+#logo{
+    display: inline-block;
+    width: 49%;
+}
+
+#logo img{
+   width: 100px; 
+   display: inline-block;
+}
+#logo h3{
+   display: inline-block;
+}
+
+header nav{
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+}
+header{
+    box-shadow: 0px 3px 9px -5px;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo *{
+    display: inline-block;
+}
+
+.conteudo article{
+        width: 69%;
+}
+
+.titulo-sessao {
+    font-size: 32px;
+}
+.titulo-audio {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.audio {
+    text-align: center;
+    background: #cecece;
+    padding: 60px;
+
+}
+
+footer {
+    text-align: center;
+    background: purple;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+/* tag main */
+.conteudo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(../img/background-main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.conteudo-form form{
+    display: flex;
+    flex-direction: column;
+    background: #ffffffeb;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid #5e4a90;
+}
+
+.conteudo-form form input, textarea, select{
+    border: 1px solid #5e4a90;
+    border-radius: 30px;
+    padding: 10px;
+    resize: none;
+}
+
+.conteudo-form form label{
+    padding: 5px;
+}
+
+.conteudo-form form button{
+    background-color: #5e4a90;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;     
+    align-self: flex-end;
+    
+}
